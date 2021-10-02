@@ -6,24 +6,24 @@ AOS.init();
 const experiencecards = document.querySelector(".experience-cards");
 const exp = [
   {
-    title: "Software Development Intern",
-    cardImage: "assets/images/experience-page/flipkart.jpg",
-    place: "Flipkart",
-    time: "(May, 2020 - present)",
-    desp: "<li>Worked to migrate Flipkart lite’s product page to AMP pages so that they load up instantly.</li> <li>Made changes in the current progressive web app of Flipkart to react to different actions performed on AMP page.</li> <li>Created a node module called “fk-amp” which abstracts all the files and middlewares and can be easily imported and used from express server.</li>",
+    title: "Python Developer/Technical Writer",
+    cardImage: "assets/images/experience-page/upwork.png",
+    place: "Upwork Contract",
+    time: "(July, 2021 - September, 2021)",
+    desp: "<li>Maintained and Enriched technical documentation for an AI startup's Python SDK.</li> <li>Wrote tutorials and example code to support Python SDK users.</li> <li>Testing use cases in Jupyter Notebooks and Docker alongside web application.</li>",
   },
   {
-    title: "Student Developer",
-    cardImage: "assets/images/experience-page/gsoc.png",
-    place: "Google Summer Of Code",
-    time: "(Mar - Aug, 2019)",
-    desp: "<li>Worked with MOZILLA as a part of Google Summer Of Code.</li><li>Worked on Extension Activity Monitor which is a privileged extension for Firefox that uses the activityLog API (privileged API) to monitor the activities of the other installed extensions.</li><li>The activityLog API listens for logs from other installed extensions.</li>",
+    title: "School Library Media Specialist",
+    cardImage: "assets/images/experience-page/lmc.jpg",
+    place: "Cherry Valley-Springfield CSD",
+    time: "(September 2015 - June, 2021)",
+    desp: "<li>Provided instruction and assessment on information literacy skills to 450+ students in grades PK-12.</li><li>Presented twice at NYSCATE on ‘Teaching with Raspberry Pi in the Elementary Classroom’.</li><li>Managed development and maintenance of a multi-faceted library collection comprising more than 10,000 physical books, databases, and digital assets.</li>",
   },
   {
-    title: "Research Intern",
-    cardImage: "assets/images/experience-page/IIT_Bombay.jpg",
+    title: "Electrician's Mate",
+    cardImage: "assets/images/experience-page/cvn69.jpg",
     place: "IIT, Bombay",
-    time: "(Dec, 19 - Jan, 20)",
+    time: "(January 2005 - September 2009)",
     desp:"<li>Worked on the project “LTI (Learning Tools Interoperability) 2.0 standards Implementation for ekShiksha.</li><li>Designed a software that would help faculty to create a quiz using the questions from the database based on his/her choice of topics and he should be provided with various facilities and options to create a quiz of his choice.</li>",
   },
 ];
@@ -32,8 +32,8 @@ const showCards2 = () => {
   let output = "";
   exp.forEach(
     ({ title, cardImage, place, time, desp }) =>
-      (output += `        
-    <div class="col gaap" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="100" data-aos-duration="400"> 
+      (output += `
+    <div class="col gaap" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="100" data-aos-duration="400">
       <div class="card card1">
         <img src="${cardImage}" class="featured-image"/>
         <article class="card-body">
@@ -93,14 +93,14 @@ const showCards = () => {
   let output = "";
   volunteershipcards.forEach(
     ({ title, cardImage, description }) =>
-      (output += `        
+      (output += `
       <div class="card volunteerCard" data-aos="fade-down" data-aos-easing="linear" data-aos-delay="100" data-aos-duration="600" style="height: 550px;width:400px">
-      
+
       <img src="${cardImage}" height="250" width="65" class="card-img" style="border-radius:10px">
       <div class="content">
           <h2 class="volunteerTitle">${title}</h2><br>
           <p class="copy">${description}</p></div>
-      
+
       </div>
       `)
   );
@@ -204,7 +204,7 @@ const mentor = [
     image: "assets/images/experience-page/nhacks.png",
     desp: "NHacks VI was a hackathon that aimed to encourage students everywhere to develop skills in computer science by creating tangible products that they're proud of. It initially started as Michigan's largest high school hackathon.",
   }
-  
+
 
 ];
 
@@ -212,7 +212,7 @@ const showCards3 = () => {
   let output = "";
   mentor.forEach(
     ({ title, image, subtitle, desp}) =>
-      (output += `  
+      (output += `
       <div class="blog-slider__item swiper-slide">
         <div class="blog-slider__img">
             <img src="${image}" alt="">
@@ -221,7 +221,7 @@ const showCards3 = () => {
           <div class="blog-slider__title">${title}</div>
           <span class="blog-slider__code">${subtitle}</span>
           <div class="blog-slider__text">${desp}</div>
-          <a href="#" class="blog-slider__button">Read More</a>   
+          <a href="#" class="blog-slider__button">Read More</a>
         </div>
       </div>
       `)
